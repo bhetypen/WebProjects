@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-color-one: #011532;
+    --dark-color-two: #000000;
+    --blue-color-one: #0050FF;
+    --light-color-one: #FFFFFF;
+    --green-color-one: #00FF00;
+    --light-green-color-one: #F0F5F5;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: "Poppins", sans-serif;
+}
+
+p, li, small, label, button, textarea, a {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-size: clamp(3rem, -0.495rem + 9.709vw, 8rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 0.612rem + 3.301vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(1.3rem, 0.811rem + 1.359vw, 2rem);
+
+}
+
+h4 {
+    font-size: clamp(1.2rem, 0.781rem + 1.165vw, 1.8rem)
+}
+
+h5 {
+    font-size: clamp(1rem, 0.86rem + 0.388vw, 1.2rem);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+h3::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: var(--green-color-one);
+    align-self: center;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/*Header*/
+
+
+header img {
+    width: 250px;
+}
+
+header, .nav-bar, .nav-bar ul {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    color: var(--light-color-one);
+    background: transparent;
+}
+
+.nav-bar {
+    padding: 1rem;
+}
+
+header .nav-bar ul {
+    gap: 0.9rem;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.nav-bar ul a {
+    color: var(--light-color-one);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.nav-bar ul a:hover {
+    color: var(--green-color-one);
+    transform: scale(1.1) translateX(30px);
+}
+
+/*Home Design*/
+
+.home {
+    background-image: url("./images/hero-image-three.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+}
+
+.home {
+    width: auto;
+    height: 130vh;
+}
+
+.home, .home-box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-box-one h1 {
+    color: var(--green-color-one);
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.home-box-one h1:hover {
+    text-transform: uppercase;
+}
+
+.home h5 {
+    font-size: 1.5rem;
+    color: var(--light-color-one);
+}
+
+.home-box-one a {
+    text-decoration: none;
+}
+
+.send-button {
+    width: 10rem;
+    padding: 0.7rem;
+    margin-top: 2rem;
+    background: var(--green-color-one);
+    color: var(--dark-color-one);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid var(--green-color-one);
+    text-decoration: none;
+}
+
+.send-button:hover {
+    border: 3px solid var(--light-color-one);
+}
+
+/*Features Section*/
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-title-box {
+    margin-bottom: 2rem;
+}
+
+
+.feature-container, .feature-box1, .feature-box2, .feature-box1-div1, .feature-box2-div2, .feature-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.feature-container {
+    gap: 2rem;
+}
+
+.feature-box1, .feature-box2, .feature-box1-div1, .feature-box2-div2, .feature-image {
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+
+}
+
+.feature-image img {
+    width: 75%;
+}
+
+.title-underline {
+    margin-top: 0;
+    height: 5px;
+    width: 8rem;
+    background-color: var(--green-color-one);
+    display: inline-block;
+    align-self: center;
+}
+
+
+/*Why Us Section*/
+
+.product-info {
+    background-color: var(--light-green-color-one);
+}
+
+.image-container-one {
+    background-color: var(--dark-color-two);
+}
+
+.image-container-one, .image-container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.image-container-two {
+    margin: 2rem;
+}
+
+.image-container-one img {
+    width: 70%;
+}
+
+.image-container-two img {
+    width: 90vw;
+}
+
+.headphone-colors ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.headphone-colors ul li {
+    padding: 5px;
+}
+
+
+.headphone-colors ul li:nth-child(1) {
+    background-color: #FEFEFD;
+}
+
+.headphone-colors ul li:nth-child(2) {
+    background-color: #9CCAE1;
+}
+
+.headphone-colors ul li:nth-child(3) {
+    background-color: #53535B;
+    color: var(--light-color-one);
+}
+
+.headphone-colors ul li:nth-child(4) {
+    background-color: #E5AD9C;
+}
+
+.headphone-colors ul li:nth-child(5) {
+    background-color: #B7B6BB;
+}
+
+
+/*Review Section*/
+
+.review-section, .review-container, .float-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.review-section, .float-box {
+    padding: 2rem;
+}
+
+.float-box {
+    text-align: left;
+    gap: 1rem;
+    padding: 1rem;
+    width: 85%;
+    border: 1px solid var(--green-color-one);
+}
+
+.float-box:hover {
+    border: 3px solid var(--green-color-one);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.float-image-container, .float-box-textbox, .float-image {
+    display: flex;
+}
+
+.float-image-container, .float-box-textbox {
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.float-image {
+    gap: 1rem;
+}
+
+.float-box img {
+    width: 70px;
+    border-radius: 50%;
+    justify-content: flex-start;
+}
+
+
+/*Contact Us Section*/
+
+.contact-section {
+    background: url("./images/hero-image-four.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+    padding: 2rem;
+    flex-direction: column;
+    color: var(--light-color-one);
+}
+
+.contact-container, .contact-section, .email-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-container {
+    text-align: left;
+    flex-direction: column;
+}
+
+.email-phone {
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.email-phone label {
+    width: 100%;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 2px solid var(--green-color-one);
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.form-div button {
+    width: 8rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: var(--green-color-one);
+    color: var(--dark-color-one);
+    font-size: 1.0rem;
+    border-radius: 7px;
+    border: 1px solid var(--green-color-one);
+
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+.contact-info-div img {
+    width: 30px;
+}
+
+.contact-info, .contact-info-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-info {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+
+}
+
+.contact-info-div {
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+/*Footer Section*/
+
+
+footer, .footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer {
+    flex-direction: column;
+    padding: 2rem;
+    background: black;
+    color: var(--green-color-one);
+}
+
+.footer-div img {
+    width: 3rem;
+}
+
+
+/*Optional Media Query for Media starts at 1400px*/
+@media screen and (min-width: 1400px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    .home {
+        height: 90vh;
+    }
+
+    .home-box-one h1 {
+        font-size: 5.5rem;
+    }
+
+    .feature-container {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .feature-box2, .feature-box1 {
+
+        width: 20%;
+
+    }
+
+    .feature-image {
+        width: 40%;
+    }
+
+
+    .image-container-one {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .image-container-one img {
+        width: 30%;
+        height: auto;
+    }
+
+    .image-container-two img {
+        width: 70vw;
+    }
+
+    .review-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .float-box {
+        height: 15rem;
+        width: 38rem;
+    }
+
+
+}
